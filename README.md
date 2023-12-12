@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# nodes-weight-dijkstra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+nodes-weight-dijkstra is a prototype application developed using Bun, Vite, and React. It visualizes the shortest paths between nodes in a weighted graph using Dijkstra's algorithm. Designed as a practical demonstration of pathfinding in graph theory, this project showcases an interactive SVG canvas for exploring graph-based algorithms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Interactive SVG Graph**: Displays nodes and edges on an SVG canvas for a clear and engaging visual representation of a graph.
+- **Pathfinding with Dijkstra's Algorithm**: Implements Dijkstra's algorithm to find the shortest paths in a weighted graph.
+- **Node Selection**: Users can select two nodes interactively to visualize the shortest path between them.
+- **Prototype Design**: Developed as a prototype for demonstration and educational purposes, not intended for production use.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Bun
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation
+
+1. Clone the repository using Git:
+   ```bash
+   git clone https://github.com/mxmarchal/nodes-weight-dijkstra.git
+   ```
+2. Install the dependencies using Bun:
+   ```bash
+    bun install
+   ```
+3. Start the development server:
+   ```bash
+    bun dev
+   ```
+4. Open the application in your browser at `http://localhost:5173`
+
+## Project Status
+
+As a prototype, this project is intended for demonstration and educational purposes. It is not designed for production deployment or external use in its current state.
